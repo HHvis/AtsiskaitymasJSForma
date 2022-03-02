@@ -22,10 +22,10 @@ registracija.addEventListener("click", function(){
     } else if ( notEmpty(miestas.value) ) {
         alert( "Uzpildykite forma" )
     } else if(sritis.value == "--Pasirinkti--"){
-        alert("Pasirinkite sritį");
+        alert("Pasirink sriti");
     }
     else {
-    list.innerHTML += "<li>" + vardas.value + " " + pavarde.value + ", " + mokykla.value + ", " + miestas.value + ", sritis: " + sritis.value + "</li>";
+    list.innerHTML += vardas.value + ", "+ pavarde.value + ", "+ mokykla.value + ", "+ miestas.value + ", sritis: " + sritis.value;
     }
 });
 
